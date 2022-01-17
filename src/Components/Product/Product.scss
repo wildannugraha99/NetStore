@@ -1,0 +1,142 @@
+.link_card{
+  text-decoration: none;
+}
+
+.card_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+ @media(min-width: 992px){
+  width: calc(100% - 180px);
+  gap: 25px;
+  justify-content: flex-start;
+ }
+}
+
+.card_product{
+  width: 45%;
+  border: 1px solid #00BFA6;
+  border-radius: 5px;
+  padding:10px;
+  cursor: pointer;
+  transition: 0.3s;
+  @media(min-width:720px){
+    width: calc(33% - 10px);
+  }
+  @media(min-width:1024px){
+    width: calc(20% - 20px);
+  }
+
+  .image_ratio{
+    position: relative;
+    padding-top: (218 / 126) * 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product_image{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.card_product:hover{
+ box-shadow:   4px 4px 0px #00BFA6;
+  
+}
+
+.product_wrapper{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #C4C4C4;
+  font-size: 14px;
+  margin-bottom: 10px;
+  .star_icon{
+    width: 17px;
+  }
+}
+
+
+.product_name{
+  font-size: 15px;
+  font-weight: 700;
+  color:#00BFA6;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.product_price{
+  font-size: 15px;
+  font-weight: 600;
+  color:#00BFA6;
+  margin-bottom: 10px;
+}
+
+.product_category{
+  font-size: 11px;
+  border: 1px solid #00BFA6;
+  background-color: #00BFA6;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  width: fit-content;
+  padding: 0 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.card_product-loading{
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  background: 
+    linear-gradient(0.25turn, transparent, rgb(255, 255, 255), transparent),
+    linear-gradient(#eee, #eee);
+  background-repeat: no-repeat;
+  background-position: -315px 0, 0 0, 0px 190px, 50px 195px; 
+  animation: loading 1.5s infinite;
+  border-radius: 5px;
+  padding: 10px;
+  @media(min-width:720px){
+    width: calc(33% - 10px);
+  }
+  @media(min-width:1024px){
+    width: calc(20% - 20px);
+  }
+  .image_ratio{
+    position: relative;
+    padding-top: (300 / 126) * 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product_image{
+    display: none;
+  }
+  .product_name{
+    display: none;
+  }
+  .product_price{
+    display: none;
+  }
+  .product_category{
+    display: none;
+  }
+  .product_wrapper{
+    display: none;
+  }
+}
+
+@keyframes loading {  
+  to {
+    background-position: 315px 0, 0 0, 0 190px, 50px 195px;
+  }
+}

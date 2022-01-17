@@ -1,0 +1,45 @@
+.accordion_container{
+  border-radius: 8px;
+  background-color: #00BFA6;
+  padding:10px 20px;
+  margin-bottom: 30px;
+}
+.accordion_button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BFA6;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  
+  cursor: pointer;
+  .down{
+    filter:  brightness(0) invert(1);
+    width: 35px;
+    height: 35px;
+    transform: unset;
+  }
+  .up{
+    filter:  brightness(0) invert(1);
+    width: 35px;
+    height: 35px;
+    transform: rotate(180deg);
+  }
+
+}
+
+.accordion_body{
+  padding-top: 15px;
+  color: white;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.accordion_body-hide{
+  max-height: 0;
+  overflow: hidden;
+}

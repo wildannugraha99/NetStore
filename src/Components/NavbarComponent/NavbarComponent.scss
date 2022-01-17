@@ -1,0 +1,104 @@
+.navbarComponent{
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+ 
+}
+
+.navbarComponent-scroll{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: #00BFA6;
+  transition: 0.5s;
+  .navbar_logo{
+   div{
+     color: white;
+   }
+  }
+  img{
+    filter:  brightness(0) invert(1);
+  }
+}
+
+.navbar_container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media(min-width: 992px){
+    padding: 20px;
+   }
+}
+.navbar_logo{
+  display: flex;
+  align-items: center;
+  div{
+    font-size: 28px;
+    font-weight: 600;
+    color: #00BFA6;
+  }
+}
+
+.navbar_icon{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  @media(min-width: 992px){
+    gap: 25px;
+   }
+  img{
+    width: 25px;
+    cursor: pointer;
+   @media(min-width: 992px){
+    width: 30px;
+   }
+  }
+
+  .filter_icon{
+    display: block;
+    border: none;
+    background-color: transparent;
+    @media(min-width: 992px){
+    display: none;
+   }
+  }
+
+  .user_icon{
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+
+  .cart_icon{
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    .notif_show{
+      position: absolute;
+      top: -6px;
+      right: -4px;
+      padding: 2px;
+      border: 1px solid #00BFA6;
+      border-radius: 100%;
+      background-color: #00BFA6;
+      color: white;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .notif_hide{
+      display: none;
+    }
+  }
+
+}
+
+

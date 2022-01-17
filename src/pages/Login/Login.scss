@@ -1,0 +1,121 @@
+.login_container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  @media(min-width: 992px){
+    flex-direction: row;
+  }
+}
+
+.logo{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  top: 25px;
+  left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  .cart_icon{
+    filter:  brightness(0) invert(1);
+  }
+  @media(min-width: 992px){
+    color: #00BFA6;
+    top: 30px;
+    left: 150px;
+    font-size: 35px;
+    .cart_icon{
+      filter:  unset;
+    }
+  }
+}
+
+.help_icon{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer;
+  .help{
+    margin: 0;
+    transition: 0.3s;
+    width: 30px;
+  }
+  .help:hover{
+    transform: scale(1.2);
+  }
+
+  @media(min-width: 992px){
+    top: 50px;
+    right: 60px;
+    .help{
+      width: 40px;
+    }
+  }
+}
+
+.login_image{
+  flex-basis: 55%;
+  display: none;
+  @media(min-width: 992px){
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    .thumbnail{
+      width: 90%;
+    }
+  }
+  
+}
+
+
+.login_form-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-basis: 45%;
+  background-color: #00BFA6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media(min-width: 992px){
+    position: unset;
+    
+  }
+}
+
+.contact_icon-container{
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  gap: 10px;
+  .contact{
+    width: 25px;
+    transition: 0.3s;
+  }
+
+  .contact:hover{
+    transform: scale(1.2);
+  }
+
+  @media(min-width: 992px){
+    .contact{
+      width: 30px;
+    }
+  }
+}
+
+.swal2-html-container{
+  text-align: left !important;
+  
+}
+.border_id{
+  border: 1px solid black !important;
+}

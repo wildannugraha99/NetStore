@@ -1,0 +1,145 @@
+
+.user_container{
+  max-width: 1200px;
+  margin: 10px auto;
+  position: relative;
+  @media(min-width: 992px){
+    border: 1px solid #00BFA6;
+    border-radius: 10px;
+  }
+}
+
+.image_wrapper{
+    padding: 30px;
+    text-align: center;
+    background-image: url("../../Assets/illustration/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+
+  .back{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 10px;
+      left: 25px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #00BFA6;
+      border-radius: 100%;
+      padding: 3px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.3s;
+    @media(min-width: 992px){
+      top: 20px;
+      left: 30px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+
+  .back:hover{
+    background-color: #00BFA6;
+    img{
+      filter: brightness(0) invert(1);
+    }
+  }
+  
+  .profile{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    @media(min-width: 992px){
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .username{
+    border: 1px solid rgb(197, 197, 197);
+    background-color: rgb(197, 197, 197);
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+    padding: 2px 10px;
+    color: white;
+  }
+}
+
+.edit{
+  border: 1px solid rgb(175, 175, 175);
+  box-shadow: 1px 1px 3px 1px rgb(175, 175, 175);
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  padding: 8px;
+  background-color: white;
+  position: absolute;
+  top: 175px;
+  right: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+  @media(min-width: 992px){
+    top: 275px;
+    right: 60px;
+  }
+  img{
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+
+.edit:hover{
+  transform: scale(1.1);
+}
+
+
+.profile{
+  padding: 20px;
+}
+
+fieldset{
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  div{
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.logot-wrapper{
+  width: 100%;
+  text-align: center;
+ margin-bottom: 30px;
+}
+.logout{
+  margin: auto;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 20px;
+  width: 50%;
+  background-color: #00BFA6;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s;
+ cursor: pointer;
+ @media(min-width: 992px){
+   width: 20%;
+   padding: 10px 20px;
+ }
+}
+
+.logout:hover{
+  transform: scale(1.1);
+  @media(min-width: 992px){
+    transform: scale(1.05);
+  }
+}

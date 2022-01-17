@@ -1,0 +1,30 @@
+.breadcrumb{
+  margin: 0 0 5px 0 !important;
+  ul{
+    display: flex;
+    padding-left:20px;
+    margin-bottom: 0;
+  }
+
+  li{
+    list-style: none;
+    list-style: none;
+    font-size: 14px;
+    color: #00BFA6;
+    margin-right: 2px;
+    &:last-child{
+      color: rgb(156, 156, 156);
+    }
+  }
+
+  .link{
+    color: #00BFA6;
+    margin-right: 2px;
+    text-decoration: none;
+  }
+
+  .link:hover{
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
